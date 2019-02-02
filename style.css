@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Color */
+
+:root {
+  --black: #333;
+  --purple: #ac44f6;
+  --green: #02ddf7;
+  --gray: #f7f7f7;
+}
+
+/* Typography */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--black);
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+small,
+.text_small {
+  font-size: 0.75em;
+}
+
+/* Hero */
+
+.hero {
+  background-image: url("hero.jpg");
+  background-position: center;
+  background-size: cover;
+  /* min-height: 100vh; */
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero__box {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  opacity: 0.9;
+  max-width: 400px;
+  margin: auto;
+}
+
+.hero__title {
+  text-transform: uppercase;
+}
+
+.hero__button {
+  background: var(--green);
+  padding: 0.75rem 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  border-radius: 50px;
+}
+
+.hero__link {
+  color: white;
+  text-decoration: none;
+}
+
+.icons {
+  background: var(--purple);
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.icons__box {
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.icons__image {
+  width: 100px;
+}
+
+.icons__h5 {
+  font-family: "Raleway", serif;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1rem;
+}
+
+.classes {
+  padding: 3rem 1.5rem;
+  background-image: url("pattern.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.classes__box {
+  background: white;
+  margin: 0 auto 2rem;
+  max-width: 400px;
+}
+
+.classes__h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.classes__image {
+  width: 100%;
+}
+
+.classes__bottom {
+  padding: 2rem;
+}
+
+.classes__h5 {
+  text-transform: uppercase;
+}
+
+.plans {
+  padding: 2rem;
+}
+
+.plans__h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.plans__box {
+  background: var(--purple);
+  padding: 2rem;
+  /* margin-bottom: 2rem; */
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+}
+
+.plans__h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.plans__h5 {
+  text-transform: uppercase;
+}
+
+.plans__h3 {
+  color: var(--green);
+}
+
+.plans__h6 {
+  margin-bottom: 1.5rem;
+}
+
+.plans__list {
+  text-align-last: left;
+  padding-left: 0;
+}
+
+.plans__items {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
+.plans__items--disabled {
+  opacity: 0.3;
+}
+
+.contact {
+  background-image: url("pattern.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.contact__box {
+  background: var(--gray);
+  padding: 1rem;
+  opacity: 0.9;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact__h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact__street {
+  margin: 0;
+}
+
+.contact__email {
+  margin: 0;
+}
+
+.contact__phone {
+  margin: 0;
+}
+
+.contact__email__link,
+.contact__phone__link {
+  text-decoration: none;
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.footer {
+  padding: 1rem;
+  background: var(--black);
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dashed white;
+}
+
+.flaticon {
+  padding: 1.5rem 1rem;
+  background: lightgray;
+}
+
+.flaticon__text {
+  margin: auto;
+  max-width: 400px;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .container-boxes {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .icons__box,
+  .classes__box,
+  .plans__box {
+    width: 30%;
+  }
+
+  .contact {
+    height: 500px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact__box {
+    width: 400px;
+  }
+}
